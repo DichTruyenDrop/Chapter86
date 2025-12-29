@@ -10,8 +10,6 @@ body{
     margin:0;
     background:#000;
 }
-
-/* ẢNH */
 img{
     width:100%;
     max-width:900px;
@@ -36,41 +34,9 @@ img{
     font-size:14px;
     min-width:120px;
     text-align:center;
-    cursor:pointer;
 }
 .nav a:hover{
     opacity:.9;
-}
-
-/* POPUP */
-.popup{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.8);
-    display:none;
-    align-items:center;
-    justify-content:center;
-    z-index:100;
-}
-.popup-box{
-    background:#1c1c1c;
-    padding:20px 25px;
-    border-radius:8px;
-    text-align:center;
-    color:#fff;
-    font-size:18px;
-}
-.popup-box button{
-    margin-top:12px;
-    padding:8px 16px;
-    border:none;
-    border-radius:5px;
-    background:#4caf50;
-    color:#fff;
-    cursor:pointer;
 }
 </style>
 </head>
@@ -94,25 +60,8 @@ img{
 
 <div class="nav">
     <a href="https://dichtruyendrop.github.io/Chapter85/">← Chap Trước</a>
-    <a onclick="hetRoi()">Chap Sau →</a>
+    <a href="https://dichtruyendrop.github.io/Ch-ng-87/">Chap Sau →</a>
 </div>
-
-<!-- POPUP HẾT RỒI -->
-<div class="popup" id="popup">
-    <div class="popup-box">
-        <h3>HẾT RỒI BẠN ƠI !!!</h3>
-        <button onclick="dong()">OK</button>
-    </div>
-</div>
-
-<script>
-function hetRoi(){
-    document.getElementById("popup").style.display = "flex";
-}
-function dong(){
-    document.getElementById("popup").style.display = "none";
-}
-</script>
 
 </body>
 </html>
